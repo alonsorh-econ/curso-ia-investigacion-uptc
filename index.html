@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IA aplicada a la investigación · UPTC–CENES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600&family=Instrument+Serif&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --azul:#1B44CC; --azul-t:#EEF2FE; --tinta:#141821; --gris:#78818F; --gris-t:#F2F4F6;
+  --lam:#F6F7F9; --linea:#E4E8EC; --txt:#4B5563; --tenue:#9AA2AD;
+  --bg:#FFFFFF; --card:#FFFFFF;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0F1318; --card:#171D25; --tinta:#E9EDF2; --txt:#A7B0BC; --tenue:#79838F;
+  --linea:#28303A; --gris-t:#1B212A; --azul-t:#16203A; --lam:#0F1318;}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tinta);
+  font-family:Inter,-apple-system,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.6}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px 80px}
+a{color:var(--azul)}
+h1,h2,h3{font-family:"Inter Tight",Inter,sans-serif;letter-spacing:-.025em}
+h1{font-size:clamp(2rem,6vw,2.9rem);font-weight:800;line-height:1.04;margin:0 0 .4rem}
+h2{font-size:1.35rem;font-weight:700;margin:0 0 .2rem}
+h3{font-size:1.02rem;font-weight:700;margin:0}
+p{margin:0 0 1em}p:last-child{margin-bottom:0}
+
+header{padding:clamp(2.6rem,8vw,4.2rem) 0 1.8rem;border-bottom:2px solid var(--tinta)}
+.marca{display:flex;align-items:center;gap:.6rem;margin-bottom:1.8rem}
+.marca svg{width:52px;height:auto;display:block}
+.marca .ar{font-family:"Instrument Serif",Georgia,serif;font-size:1.5rem;color:var(--tinta);line-height:1}
+.marca .l{width:1px;height:20px;background:var(--linea)}
+.marca .nm{font-family:"IBM Plex Mono",monospace;font-size:.66rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--tenue)}
+.sub{color:var(--txt);font-size:1.08rem;max-width:52ch;margin:.6rem 0 0}
+.meta{font-family:"IBM Plex Mono",monospace;font-size:.76rem;color:var(--tenue);
+  letter-spacing:.04em;margin-top:1.3rem}
+
+section{padding:2.4rem 0;border-bottom:1px solid var(--linea)}
+section:last-of-type{border-bottom:0}
+.eyeb{font-family:"IBM Plex Mono",monospace;font-size:.7rem;letter-spacing:.15em;
+  text-transform:uppercase;color:var(--tenue);margin:0 0 .9rem}
+
+.ses{display:flex;flex-direction:column;gap:10px}
+.s{display:grid;grid-template-columns:auto 1fr auto;gap:.9rem;align-items:center;
+  background:var(--card);border:1px solid var(--linea);border-radius:10px;padding:.85rem 1rem}
+.s .n{font-family:"IBM Plex Mono",monospace;font-size:.78rem;font-weight:500;color:#fff;
+  background:var(--tinta);width:1.9rem;height:1.9rem;border-radius:50%;
+  display:flex;align-items:center;justify-content:center}
+.s.on .n{background:var(--azul)}
+.s .t{font-family:"Inter Tight",sans-serif;font-weight:700;font-size:1rem}
+.s .f{font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--tenue);margin-top:.1rem}
+.s .d{font-size:.85rem;color:var(--txt);margin-top:.15rem}
+.s .go{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--azul);text-decoration:none;white-space:nowrap;
+  border:1px solid var(--azul);border-radius:99px;padding:.32rem .75rem}
+.s .go:hover{background:var(--azul);color:#fff}
+.s .pend{font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--tenue);white-space:nowrap}
+
+.mat{display:grid;gap:10px}
+@media(min-width:620px){.mat{grid-template-columns:1fr 1fr}}
+.m{background:var(--card);border:1px solid var(--linea);border-left:3px solid var(--azul);
+  border-radius:0 10px 10px 0;padding:.9rem 1.05rem}
+.m a{font-weight:600;text-decoration:none}
+.m p{font-size:.88rem;color:var(--txt);margin:.25rem 0 0}
+
+.tarea{background:var(--azul-t);border-radius:10px;padding:1.1rem 1.25rem;margin-top:1rem}
+.tarea h3{color:var(--azul);margin-bottom:.5rem}
+.tarea ol{margin:.4rem 0 0;padding-left:1.2rem}
+.tarea li{margin-bottom:.45rem;font-size:.95rem;color:var(--txt)}
+.tarea li strong{color:var(--tinta)}
+
+footer{padding:2.2rem 0 0;font-family:"IBM Plex Mono",monospace;font-size:.74rem;color:var(--tenue);line-height:1.7}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="marca">
+    <svg viewBox="0 0 200 90" aria-label="AR"><g fill="none" stroke="#1B44CC" stroke-width="13" stroke-linecap="round"><circle cx="55" cy="47" r="34"/><circle cx="145" cy="47" r="34"/><path d="M89 43c7-7 15-7 22 0"/><path d="M21 36 8 30"/><path d="M179 36l13-6"/></g></svg>
+    <span class="ar">AR</span><span class="l"></span>
+    <span class="nm">Alonso Ramírez Hernández</span>
+  </div>
+  <h1>IA aplicada a la investigación:<br>de las tareas al sistema</h1>
+  <p class="sub">Curso de 20 horas para semilleros de investigación de Economía, Administración y Contaduría.</p>
+  <p class="meta">CENES · Facultad de Ciencias Económicas, Administrativas y Contables · UPTC · septiembre de 2026</p>
+</header>
+
+<section>
+  <p class="eyeb">Las seis sesiones</p>
+  <div class="ses">
+    <div class="s on">
+      <span class="n">01</span>
+      <div><div class="t">Ideación</div><div class="f">martes 1 de septiembre · 6:00–9:00 p.m.</div>
+      <div class="d">De la inquietud a la pregunta investigable.</div></div>
+      <a class="go" href="sesion-01.html">Ver láminas</a>
+    </div>
+    <div class="s">
+      <span class="n">02</span>
+      <div><div class="t">Literatura</div><div class="f">jueves 3 de septiembre · 6:00–9:00 p.m.</div>
+      <div class="d">Mapear el terreno sin inventarse el mapa.</div></div>
+      <span class="pend">próximamente</span>
+    </div>
+    <div class="s">
+      <span class="n">03</span>
+      <div><div class="t">Datos</div><div class="f">sábado 5 de septiembre · 8:00 a.m.–12:00 m.</div>
+      <div class="d">El pipeline reproducible.</div></div>
+      <span class="pend">próximamente</span>
+    </div>
+    <div class="s">
+      <span class="n">04</span>
+      <div><div class="t">Descarte</div><div class="f">martes 8 de septiembre · 6:00–9:00 p.m.</div>
+      <div class="d">La habilidad central del curso.</div></div>
+      <span class="pend">próximamente</span>
+    </div>
+    <div class="s">
+      <span class="n">05</span>
+      <div><div class="t">Escritura</div><div class="f">jueves 10 de septiembre · 6:00–9:00 p.m.</div>
+      <div class="d">Figuras honestas y doble registro.</div></div>
+      <span class="pend">próximamente</span>
+    </div>
+    <div class="s">
+      <span class="n">06</span>
+      <div><div class="t">El sistema</div><div class="f">sábado 12 de septiembre · 8:00 a.m.–12:00 m.</div>
+      <div class="d">El engranaje: las seis piezas se vuelven un paper.</div></div>
+      <span class="pend">próximamente</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="eyeb">Materiales de la sesión 1</p>
+  <div class="mat">
+    <div class="m"><a href="sesion-01.html">Láminas de la sesión 1 →</a>
+      <p>Se abren en el navegador. <code>S</code> notas · <code>Esc</code> rejilla · <code>F</code> pantalla completa.</p></div>
+    <div class="m"><a href="cuaderno-de-prompts.pdf">Cuaderno de prompts (PDF) →</a>
+      <p>Las fichas de formular e interrogar, con qué hacer con lo que devuelve.</p></div>
+    <div class="m"><a href="bitacora.pdf">Bitácora (PDF) →</a>
+      <p>Cuatro columnas: qué pedí · qué devolvió · qué corregí · por qué.</p></div>
+    <div class="m"><a href="secop-boyaca.csv">Datos del demo (CSV) →</a>
+      <p>Contratos públicos de Boyacá, SECOP II. Para subir a Google Colab.</p></div>
+  </div>
+</section>
+
+<section>
+  <p class="eyeb">Para el jueves 3</p>
+  <div class="tarea">
+    <h3>Lo que hay que traer</h3>
+    <ol>
+      <li><strong>El sobre sellado sin abrir.</strong> Las cinco referencias que les dio la herramienta el martes, con su DOI. <strong>Sin verificar.</strong> El jueves las abrimos.</li>
+      <li><strong>La pregunta formulada</strong>, con las tres objeciones respondidas por escrito.</li>
+      <li><strong>El computador.</strong> La sesión arranca con ejercicio práctico y se trabaja en pantalla propia.</li>
+    </ol>
+  </div>
+</section>
+
+<footer>
+  Alonso Ramírez Hernández · Jefe del Departamento de Investigaciones Económicas, Cámara de Comercio de Cartagena<br>
+  Curso dictado para el CENES · UPTC · septiembre de 2026
+</footer>
+
+</div>
+</body>
+</html>
