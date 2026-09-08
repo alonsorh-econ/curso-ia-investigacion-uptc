@@ -1,0 +1,6 @@
+resultado,etiqueta,coef,ee,p,n_municipios
+part_directa_valor,Contratación directa · en VALOR,0.275,0.092,0.003,146
+part_directa_contratos,Contratación directa · en N.º DE CONTRATOS,0.078,0.038,0.040,146
+n_contratos,Número total de contratos (log),0.041,0.055,0.456,146
+valor_total_sano,Valor total saneado (log),0.062,0.071,0.383,146
+valor_total_bruto,Valor total crudo (log),0.019,0.088,0.829,146
