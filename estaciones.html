@@ -1,4 +1,4 @@
-<title>Las seis estaciones</title>
+<title>Las siete estaciones</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
@@ -31,25 +31,26 @@ nav a{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.66re
 nav a:hover,nav a:focus-visible{border-color:var(--azul);color:var(--azul);outline:none}
 .bt{font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3);margin:2.2rem 0 .75rem;padding-bottom:.38rem;border-bottom:1px solid var(--regla)}
 .tw{overflow-x:auto;border-radius:9px;box-shadow:var(--sh)}
-table{width:100%;border-collapse:collapse;font-size:.89rem;background:var(--surf);font-variant-numeric:tabular-nums}
-th{font-family:"IBM Plex Mono",monospace;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--tinta);padding:.5rem .65rem;text-align:left}
+table{width:100%;border-collapse:collapse;font-size:.88rem;background:var(--surf);font-variant-numeric:tabular-nums}
+th{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;background:var(--tinta);padding:.5rem .65rem;text-align:left}
 td{padding:.46rem .65rem;border-bottom:1px solid var(--regla);color:var(--ink2)}
 tr:last-child td{border-bottom:0}
 .h{font-family:"IBM Plex Mono",monospace;color:var(--azul);font-weight:700;white-space:nowrap}
+.casa{background:var(--ambar-t)!important}
 
-/* la estación */
 .est{background:var(--surf);border:1px solid var(--regla);border-radius:13px;margin-top:1.5rem;overflow:hidden;box-shadow:var(--sh);scroll-margin-top:56px}
 .eh{display:grid;grid-template-columns:auto 1fr auto;gap:.85rem;align-items:center;padding:.9rem 1.1rem;background:var(--azul);color:#fff}
 .eh .n{font-family:"Inter Tight",sans-serif;font-weight:800;font-size:1.7rem;line-height:1;opacity:.55}
-.eh h2{color:#fff;font-size:1.15rem}
+.eh h2{color:#fff;font-size:1.12rem}
 .eh .cas{font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;
   background:rgba(255,255,255,.2);padding:.25rem .5rem;border-radius:5px;white-space:nowrap}
+.est.nueva .eh{background:var(--verde)}
 .eb{padding:1.1rem}
 .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.5rem;margin-bottom:.9rem}
 .mi{background:var(--gris-t);border-radius:8px;padding:.5rem .68rem}
 .mi b{display:block;font-family:"IBM Plex Mono",monospace;font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:.18rem}
-.mi span{font-size:.87rem;font-weight:600;color:var(--ink)}
-.paso{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--azul);margin:1rem 0 .4rem}
+.mi span{font-size:.86rem;font-weight:600;color:var(--ink)}
+.paso{font-family:"IBM Plex Mono",monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--azul);margin:1.1rem 0 .4rem}
 .dice,.av,.ok,.tool{border-radius:8px;padding:.7rem .88rem;margin:.62rem 0;font-size:.93rem}
 .dice{background:var(--azul-t);border-left:3px solid var(--azul);color:var(--ink2)}
 .av{background:var(--carmin-t);border-left:3px solid var(--carmin);color:var(--ink2);font-size:.9rem}
@@ -62,7 +63,7 @@ ol,ul{margin:.45rem 0;padding-left:1.2rem}li{margin-bottom:.36rem;font-size:.94r
 li strong{color:var(--ink)}
 code{font-family:"IBM Plex Mono",monospace;font-size:.85em;background:var(--gris-t);padding:.1em .32em;border-radius:4px}
 a{color:var(--azul)}
-.queda{background:var(--tinta);color:#E4E9F0;border-radius:8px;padding:.7rem .9rem;margin-top:.9rem;font-size:.9rem}
+.queda{background:var(--tinta);color:#E4E9F0;border-radius:8px;padding:.7rem .9rem;margin-top:.9rem;font-size:.89rem}
 .queda b{display:block;font-family:"IBM Plex Mono",monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:#8FA9FF;margin-bottom:.25rem}
 .queda code{background:rgba(255,255,255,.12);color:#E4E9F0}
 </style>
@@ -70,272 +71,395 @@ a{color:var(--azul)}
 <div class="wrap">
 <header>
   <p class="kick">Sesión 5 · sábado 12 de septiembre · 8:00 a.m.–12:00 m.</p>
-  <h1>Las seis estaciones</h1>
-  <p class="lede"><strong>Hoy se recorre el sistema entero, a mano, con su propia pregunta.</strong> Una estación por casilla: una herramienta, un prompt, una trampa, y un archivo que queda guardado. Al final de la mañana su carpeta está llena de verdad.</p>
+  <h1>Las siete estaciones</h1>
+  <p class="lede"><strong>Hoy se recorre el proceso de investigación completo, a mano, con su propia pregunta.</strong> Una estación por fase: una herramienta, unos prompts, una trampa, y un archivo que queda guardado en su sistema.</p>
 </header>
 
 <nav aria-label="Ir a">
   <a href="#e1">1 · Pregunta</a>
   <a href="#e2">2 · Literatura</a>
-  <a href="#e3">3 · Datos</a>
-  <a href="#e4">4 · Primer número</a>
-  <a href="#e5">5 · Escritura</a>
-  <a href="#e6">6 · Salidas</a>
-  <a href="#sabado">Lunes</a>
+  <a href="#e3">3 · Metodología</a>
+  <a href="#e4">4 · Datos</a>
+  <a href="#e5">5 · Descriptivas</a>
+  <a href="#e6">6 · Escritura</a>
+  <a href="#e7">7 · Abstract</a>
+  <a href="#lunes">Lunes</a>
 </nav>
 
 <div class="dice">
 <b>Por qué todo a mano hoy</b>
-Van a buscar la literatura y bajarla ustedes. Van a encontrar el dato y guardarlo ustedes. Van a copiar y pegar. <strong>Es a propósito.</strong> El lunes conectamos el sistema para que haga solo la mitad de esto — y solo se entiende lo que uno se ahorra cuando ya lo hizo con las manos.
+Cada estación usa <strong>una herramienta distinta y ninguna está conectada</strong>. Van a sacar un archivo de cada una y lo van a guardar ustedes, a pulso. <strong>Es a propósito.</strong> El lunes conectamos el sistema para que haga solo la mitad de esto — y solo se entiende lo que uno se ahorra cuando ya lo hizo con las manos.
 </div>
-
-<div class="tw" style="margin-top:1rem"><table>
-<thead><tr><th>Hora</th><th>Estación</th><th>Qué queda en la carpeta</th></tr></thead>
-<tbody>
-<tr><td class="h">8:00</td><td>Apertura · dónde estamos y qué sale hoy</td><td>—</td></tr>
-<tr><td class="h">8:20</td><td><strong>1 · La pregunta que sí se puede investigar</strong></td><td><code>01_ideas/hipotesis.md</code></td></tr>
-<tr><td class="h">8:50</td><td><strong>2 · La literatura, y las citas que no existen</strong></td><td><code>03_literatura/</code> + PDFs</td></tr>
-<tr><td class="h">9:30</td><td><strong>3 · El dato que sí existe</strong></td><td><code>04_datos/crudo/</code> con un archivo</td></tr>
-<tr><td class="h">10:05</td><td>Pausa</td><td>—</td></tr>
-<tr><td class="h">10:20</td><td><strong>4 · El primer número</strong></td><td><code>05_salidas/figura_1.png</code></td></tr>
-<tr><td class="h">10:50</td><td><strong>5 · La introducción en cuatro párrafos</strong></td><td><code>05_salidas/intro.md</code></td></tr>
-<tr><td class="h">11:25</td><td><strong>6 · El abstract y los límites</strong></td><td><code>05_salidas/resumen.md</code></td></tr>
-<tr><td class="h">11:50</td><td>Qué traer el lunes</td><td>—</td></tr>
-</tbody></table></div>
 
 <div class="av">
-<b>Si no tiene el sistema armado</b>
-Antes de la estación 1, corra el prompt de <strong>«¿Se le quedó el sistema atrás?»</strong> que está en el sitio del curso. Son cinco minutos y le arma las seis carpetas. No arranque sin eso.
+<b>La regla que evita el atasco</b>
+<strong>Ninguna estación queda perfecta y no importa.</strong> La pregunta se afina «lo suficiente para moverse», y la estación 4 la va a devolver — porque cuando uno busca datos descubre que la variable que quería no existe, y la pregunta cambia. <strong>Ese ciclo no es una falla: es el proceso.</strong> Escriban lo que tengan, marquen <code>[FALTA: qué]</code> y sigan.
 </div>
+
+<p class="bt">El reloj</p>
+<div class="tw"><table>
+<thead><tr><th>Hora</th><th>Estación</th><th>Herramienta</th><th>Queda</th></tr></thead>
+<tbody>
+<tr><td class="h">8:20</td><td><strong>1 · La pregunta</strong></td><td>su IA de confianza</td><td><code>hipotesis.md</code></td></tr>
+<tr><td class="h">8:50</td><td><strong>2 · La literatura</strong></td><td>Consensus</td><td>PDFs + tabla</td></tr>
+<tr><td class="h">9:30</td><td><strong>3 · La metodología</strong></td><td>su IA de confianza</td><td><code>metodologia.md</code></td></tr>
+<tr><td class="h">10:05</td><td>Pausa</td><td>—</td><td>—</td></tr>
+<tr><td class="h">10:20</td><td><strong>4 · Los datos</strong></td><td>navegador + IA</td><td><code>crudo/</code> + <code>FUENTES.md</code></td></tr>
+<tr><td class="h">11:00</td><td><strong>5 · Las descriptivas</strong></td><td>Google Colab</td><td><code>figura_1.png</code></td></tr>
+<tr><td class="h">11:30</td><td><strong>6 · La introducción</strong></td><td>a mano + IA</td><td><code>intro.md</code></td></tr>
+<tr><td class="casa h">11:50</td><td class="casa"><strong>7 · El abstract</strong> · se arranca aquí</td><td class="casa">su IA</td><td class="casa"><code>resumen.md</code></td></tr>
+</tbody></table></div>
+<p style="font-size:.9rem;color:var(--ink3);margin-top:.5rem">La fila ámbar se termina en casa. Es el entregable que se trae el lunes.</p>
 
 <!-- ═══ 1 ═══ -->
 <div class="est" id="e1">
-<div class="eh"><span class="n">1</span><h2>La pregunta que sí se puede investigar</h2><span class="cas">Casilla 01</span></div>
+<div class="eh"><span class="n">1</span><h2>La pregunta que sí se puede investigar</h2><span class="cas">01_ideas</span></div>
 <div class="eb">
 <div class="meta">
-<div class="mi"><b>Dónde</b><span>Su asistente</span></div>
+<div class="mi"><b>Herramienta</b><span>ChatGPT · Claude · Gemini</span></div>
 <div class="mi"><b>Cuánto</b><span>30 minutos</span></div>
 <div class="mi"><b>Sale</b><span>hipotesis.md</span></div>
 </div>
 
-<p style="font-size:.94rem">Una pregunta de investigación no es un tema. «La informalidad en Tunja» es un tema. Una pregunta dice <strong>qué se mide, en quién, y contra qué se compara.</strong> Si le falta una de las tres, todo lo que sigue sale torcido.</p>
+<p style="font-size:.94rem">Una pregunta de investigación no es un tema. «La informalidad en Tunja» es un tema. Una pregunta dice <strong>qué se mide, en quién, y contra qué se compara.</strong></p>
 
-<p class="paso">Paso 1 · escriba la suya, como salga</p>
-<p style="font-size:.94rem">En <code>01_ideas/hipotesis.md</code>, una frase. Fea está bien.</p>
-
-<p class="paso">Paso 2 · que la máquina la desarme</p>
-<div class="dice"><b>El prompt</b>
+<p class="paso">Prompt 1 · desarmarla · versión cuantitativa</p>
 <pre>Esta es mi pregunta de investigación:
-[PEGUE SU FRASE]
+[SU FRASE]
 
 Desármala en tres partes y dime si cada una está o falta:
   QUÉ SE MIDE — la variable de resultado, concreta y medible
   EN QUIÉN — la unidad de observación y la población
   CONTRA QUÉ — el grupo o el momento con el que se compara
 
-Para cada parte que falte, dame TRES opciones distintas de cómo
-podría completarla, y di cuál de las tres es más fácil de medir
-con datos que existan en Colombia.
+Para cada parte que falte, dame TRES opciones de cómo completarla,
+y di cuál es más fácil de medir con datos que existan en Colombia.
 
 No me des una pregunta nueva. Trabaja sobre la mía.
-No me digas que está bien si le falta algo.</pre></div>
+No me digas que está bien si le falta algo.</pre>
 
-<p class="paso">Paso 3 · escoja y escriba la versión afilada</p>
-<p style="font-size:.94rem">Escoja <strong>una</strong> opción por parte. Las otras dos <strong>no se botan</strong>: van a <code>02_decision/decisiones.md</code> con una línea de por qué no. Esa es la casilla que se les olvida y es la que después les salva la sustentación.</p>
+<p class="paso">Prompt 1-B · si su pregunta es cualitativa</p>
+<pre>Mi pregunta de investigación es:
+[SU FRASE]
 
-<div class="av"><b>La trampa de esta estación</b>
-La máquina le va a proponer preguntas que suenan mejor que la suya. <strong>No las acepte.</strong> Su ventaja es que usted conoce el terreno y ella no: si cambia la pregunta por una que suena bonita, pierde lo único que no se puede copiar.</div>
+Es una pregunta cualitativa: no busco medir un efecto, busco
+entender cómo funciona algo.
+
+Desármala así:
+  QUÉ FENÓMENO quiero entender, en una frase
+  EN QUIÉN O DÓNDE — los casos, y por qué esos y no otros
+  QUÉ VARIACIÓN quiero aprovechar — qué casos contrasto entre sí
+  CON QUÉ EVIDENCIA — entrevistas, documentos, observación
+
+Dime cuál de las cuatro está más floja y por qué. Y dime cuántos
+casos necesitaría como mínimo para que el contraste diga algo.</pre>
+
+<p class="paso">Prompt 2 · dejarla escrita en el sistema</p>
+<pre>Con la versión que acabamos de afilar, escríbeme el contenido de
+01_ideas/hipotesis.md con esta estructura y nada más:
+
+# La pregunta
+[una sola frase]
+
+## Sus partes
+- Qué se mide:
+- En quién:
+- Contra qué se compara:
+
+## La hipótesis
+[qué espero encontrar, y por qué — dos renglones]
+
+## Provisional hasta
+[qué tendría que ver en los datos para que esta pregunta cambie]
+
+Lo que no sepas de mí, escríbelo como [FALTA: qué].</pre>
+
+<p class="paso">Prompt 3 · lo que se descartó</p>
+<pre>De las opciones que consideramos y no escogí, hazme el contenido
+de 02_decision/decisiones.md:
+
+Una entrada por opción descartada, con la fecha de hoy, así:
+qué consideré · por qué no · qué tendría que cambiar para que
+volviera a considerarla.
+
+Dos renglones cada una. En pasado. Sin adornos.</pre>
+
+<div class="av"><b>La trampa</b>
+La máquina le va a proponer preguntas que suenan mejor que la suya. <strong>No las acepte.</strong> Su ventaja es que usted conoce el terreno y ella no: si cambia la pregunta por una bonita, pierde lo único que no se puede copiar.</div>
 
 <div class="ok"><b>Sabe que quedó bien si…</b>
-Puede leerle la pregunta a alguien que no sabe del tema y esa persona puede repetirle qué se mide y en quién. Pruébelo con el compañero de al lado. En serio, pruébelo.</div>
+Puede leerle la pregunta al compañero de al lado y esa persona puede repetirle qué se mide y en quién. Pruébelo.</div>
 
 <div class="queda"><b>Queda guardado</b>
-<code>01_ideas/hipotesis.md</code> — la pregunta afilada, con sus tres partes marcadas<br>
-<code>02_decision/decisiones.md</code> — las opciones que descartó, con la razón</div>
+<code>01_ideas/hipotesis.md</code> · <code>02_decision/decisiones.md</code></div>
 </div></div>
 
 <!-- ═══ 2 ═══ -->
 <div class="est" id="e2">
-<div class="eh"><span class="n">2</span><h2>La literatura, y las citas que no existen</h2><span class="cas">Casilla 03</span></div>
+<div class="eh"><span class="n">2</span><h2>La literatura, y las citas que no existen</h2><span class="cas">03_literatura</span></div>
 <div class="eb">
 <div class="meta">
-<div class="mi"><b>Dónde</b><span>Consensus · el navegador</span></div>
-<div class="mi"><b>Cuánto</b><span>30 minutos</span></div>
-<div class="mi"><b>Sale</b><span>tabla + PDFs</span></div>
+<div class="mi"><b>Herramienta</b><span>Consensus</span></div>
+<div class="mi"><b>Cuánto</b><span>40 minutos</span></div>
+<div class="mi"><b>Sale</b><span>3 PDF + la tabla</span></div>
 </div>
 
 <p style="font-size:.94rem">Esta estación tiene dos mitades y la segunda es la que importa.</p>
 
 <p class="paso">Paso 1 · pídale cinco papers al chat que usa siempre</p>
-<div class="dice"><b>El prompt · en ChatGPT, Claude o Gemini</b>
 <pre>Dame cinco artículos académicos sobre [SU TEMA].
-Para cada uno: autor, año, título, revista y DOI.</pre></div>
+Para cada uno: autor, año, título, revista y DOI.</pre>
 <p style="font-size:.94rem">Cópielos en un archivo aparte. <strong>No los guarde todavía en el sistema.</strong></p>
 
 <p class="paso">Paso 2 · verifíquelos, uno por uno</p>
 <p style="font-size:.94rem">Abra <a href="https://doi.org">doi.org</a> y pegue cada DOI. O busque el título exacto, entre comillas, en <a href="https://scholar.google.com">Google Scholar</a>.</p>
-<div class="av"><b>La trampa · y es el momento de la noche</b>
+<div class="av"><b>La trampa · y es el momento de la mañana</b>
 Van a encontrar que <strong>varias no existen</strong>. El autor es real, la revista es real, el año es plausible — y el artículo nunca se escribió. O el DOI lleva a otro paper distinto.<br><br>
-<strong>Anoten cuántas de las cinco sobrevivieron.</strong> Lo vamos a contar en voz alta. Ese número es la razón por la que existe la mitad de este curso.</div>
+<strong>Anoten cuántas de las cinco sobrevivieron.</strong> Lo vamos a contar en voz alta.</div>
 
 <p class="paso">Paso 3 · ahora sí, la herramienta que busca de verdad</p>
 <div class="tool"><b>Las tres que funcionan, todas con plan gratis</b>
 <ul>
-<li><strong><a href="https://consensus.app">Consensus</a></strong> — busca en 200 millones de papers reales y le resume qué dice la evidencia. Es el que usamos hoy.</li>
-<li><strong><a href="https://elicit.com">Elicit</a></strong> — le arma una tabla comparativa: método, muestra, resultado, por cada paper.</li>
-<li><strong><a href="https://www.semanticscholar.org">Semantic Scholar</a></strong> — sin cuenta, sin límite. El más austero y el más confiable.</li>
+<li><strong><a href="https://consensus.app">Consensus</a></strong> — busca en papers reales y le resume qué dice la evidencia. Es el de hoy.</li>
+<li><strong><a href="https://elicit.com">Elicit</a></strong> — le arma una tabla: método, muestra, resultado, por paper.</li>
+<li><strong><a href="https://www.semanticscholar.org">Semantic Scholar</a></strong> — sin cuenta. El más austero y el más confiable.</li>
 </ul>
-La diferencia con el chat: <strong>estas buscan en una base de datos real.</strong> No pueden inventar un paper porque solo devuelven lo que está ahí.</div>
+La diferencia con el chat: <strong>estas buscan en una base real.</strong> No pueden inventar un paper porque solo devuelven lo que está ahí.</div>
 
-<p style="font-size:.94rem">Escriba su pregunta en Consensus, en inglés, tal cual. Baje <strong>tres PDF</strong> a <code>03_literatura/</code>.</p>
+<p style="font-size:.94rem">Escriba su pregunta en Consensus, en inglés. Baje <strong>tres PDF</strong> a <code>03_literatura/</code>.</p>
 
-<p class="paso">Paso 4 · la tabla de evidencia, a mano</p>
-<div class="dice"><b>El prompt · con los tres PDF cargados</b>
+<p class="paso">Paso 4 · la tabla de evidencia</p>
 <pre>Te adjunto tres artículos. Hazme una tabla con una fila por
 artículo y estas columnas:
 
-  AUTOR Y AÑO | QUÉ MIDEN | CON QUÉ DATOS | QUÉ ENCUENTRAN | QUÉ NO RESUELVEN
+  AUTOR Y AÑO | QUÉ MIDEN | CON QUÉ DATOS | QUÉ MÉTODO USAN |
+  QUÉ ENCUENTRAN | QUÉ NO RESUELVEN
 
 Después, en dos renglones: qué tienen los tres en común, y qué
 es lo que ninguno de los tres responde.
 
-Solo lo que esté en los PDF. Si algo no está, escribe "no dice".</pre></div>
-<p style="font-size:.94rem">Esa última pregunta —<em>qué no responde ninguno</em>— es el hueco. Y el hueco es su aporte.</p>
+Solo lo que esté en los PDF. Si algo no está, escribe "no dice".</pre>
+<div class="ok"><b>La columna del método no es de relleno</b>
+Es la que va a usar en la estación 3. <strong>Guárdela bien:</strong> lo que la literatura hace con esta pregunta es la primera pista de lo que usted puede hacer.</div>
 
 <div class="queda"><b>Queda guardado</b>
-<code>03_literatura/</code> — tres PDF de verdad<br>
-<code>03_literatura/tabla_evidencia.md</code> — la tabla y el hueco<br>
-<code>02_decision/decisiones.md</code> — cuántas citas del chat resultaron falsas</div>
+<code>03_literatura/</code> tres PDF · <code>03_literatura/tabla_evidencia.md</code> · y en <code>decisiones.md</code>, cuántas citas del chat resultaron falsas</div>
 </div></div>
 
-<!-- ═══ 3 ═══ -->
-<div class="est" id="e3">
-<div class="eh"><span class="n">3</span><h2>El dato que sí existe</h2><span class="cas">Casilla 04</span></div>
+<!-- ═══ 3 · NUEVA ═══ -->
+<div class="est nueva" id="e3">
+<div class="eh"><span class="n">3</span><h2>La metodología · qué puedo hacer y qué no</h2><span class="cas">02_decision</span></div>
 <div class="eb">
 <div class="meta">
-<div class="mi"><b>Dónde</b><span>El navegador</span></div>
+<div class="mi"><b>Herramienta</b><span>Su IA de confianza</span></div>
 <div class="mi"><b>Cuánto</b><span>35 minutos</span></div>
-<div class="mi"><b>Sale</b><span>un archivo real</span></div>
+<div class="mi"><b>Sale</b><span>metodologia.md</span></div>
 </div>
 
-<p style="font-size:.94rem"><strong>La regla de esta estación: no se sale de aquí sin un archivo bajado.</strong> Ni una lista de fuentes posibles, ni un plan. Un archivo, en su computador, en <code>04_datos/crudo/</code>.</p>
+<p style="font-size:.94rem">Va aquí y no al final <strong>por una razón</strong>: la literatura le dijo qué métodos usa la gente para esta pregunta, y el método determina qué datos tiene que ir a buscar. Si va a datos sin método, baja lo primero que encuentre y después no le sirve.</p>
 
-<p class="paso">Paso 1 · dónde buscar</p>
-<div class="tool"><b>Las cinco puertas, en orden de facilidad</b>
-<ul>
-<li><strong><a href="https://www.datos.gov.co">datos.gov.co</a></strong> — el catálogo nacional. Todo se baja en CSV sin cuenta.</li>
-<li><strong><a href="https://microdatos.dane.gov.co">microdatos.dane.gov.co</a></strong> — GEIH, ECV, ENUT, censos. Pide registro, es gratis.</li>
-<li><strong><a href="https://www.icfes.gov.co/data-icfes/">ICFES · Data</a></strong> — Saber 11 y Saber Pro por estudiante.</li>
-<li><strong><a href="https://totoro.banrep.gov.co/estadisticas-economicas/">Banco de la República</a></strong> — series macro, todo en Excel.</li>
-<li><strong><a href="https://terridata.dnp.gov.co">TerriData · DNP</a></strong> — indicadores por municipio, ya cruzados.</li>
-</ul>
-La lista completa de 23 fuentes está en el sitio del curso: <em>fuentes abiertas de Colombia</em>.</div>
+<p class="paso">Prompt 1 · el abanico completo</p>
+<pre>Mi pregunta es: [PEGUE LA PREGUNTA AFILADA]
+De la literatura que revisé, los métodos que usan son:
+[PEGUE LA COLUMNA "QUÉ MÉTODO USAN" DE SU TABLA]
 
-<p class="paso">Paso 2 · el prompt que le dice dónde está lo suyo</p>
-<div class="dice"><b>El prompt</b>
-<pre>Mi pregunta de investigación es:
-[PEGUE LA PREGUNTA AFILADA DE LA ESTACIÓN 1]
+Dame los enfoques metodológicos que podrían responder mi pregunta.
+NO te limites a evaluación de impacto. Considera, según aplique:
 
-Dime qué fuentes de datos colombianas existen para responderla.
-Para cada una: qué entidad la produce, qué años cubre, a qué
-nivel está (persona, empresa, municipio), si es pública o hay
-que pedirla, y el enlace exacto.
+- Causales: experimento, diferencias en diferencias, regresión
+  discontinua, variable instrumental, emparejamiento, control
+  sintético, estudio de eventos
+- Cuantitativos no causales: datos de panel, series de tiempo,
+  análisis factorial o PCA, ecuaciones estructurales (SEM/PLS),
+  análisis de conglomerados, análisis envolvente de datos (DEA)
+  para eficiencia, análisis de supervivencia, análisis de redes
+- Cualitativos: estudio de caso único o múltiple, análisis de
+  contenido, entrevistas semiestructuradas, rastreo de procesos
+- Mixtos: secuencial explicativo, triangulación
 
-Ordénalas por cuál puedo bajar HOY, sin pedir permiso a nadie.
+Para CADA uno que aplique, una tabla:
+  MÉTODO | QUÉ DATOS EXIGE | QUÉ SUPUESTO TIENE QUE CUMPLIRSE |
+  CUÁNTOS CASOS MÍNIMO | QUÉ PUEDO AFIRMAR SI FUNCIONA
 
-Y dime cuál es la variable que necesito y que probablemente NO
-voy a encontrar en ninguna. Esa quiero saberla desde ya.</pre></div>
+Ordénalos del más factible para mí al menos factible.</pre>
 
-<p class="paso">Paso 3 · baje el archivo y ábralo</p>
-<p style="font-size:.94rem">Bájelo a <code>04_datos/crudo/</code>. <strong>Y ábralo.</strong> Mire cuántas filas trae y cómo se llaman las columnas.</p>
+<p class="paso">Prompt 2 · el que duele, y es el importante</p>
+<pre>Ahora al revés. Con mi pregunta y lo que sé que tengo a mano:
 
-<div class="av"><b>La trampa · la misma del lunes pasado</b>
-Un filtro que no encuentra nada <strong>no da error: da cero filas</strong>. Si escribe el nombre de una categoría sin la tilde, o con una mayúscula de más, el resultado es un archivo vacío y nadie le avisa.<br><br>
-<strong>Siempre, antes de filtrar:</strong> pida la lista de valores únicos de esa columna y cópielos tal como aparecen. Uno por uno.</div>
+1. ¿Qué NO puedo afirmar con ningún método disponible? Dime la
+   afirmación que me gustaría hacer y no voy a poder.
+2. ¿Qué método descarto y por qué? Uno por uno, con la razón.
+3. Si al final solo puedo hacer un análisis descriptivo o
+   correlacional, ¿eso sigue siendo un aporte? Sé honesto: dime
+   sí o no, y bajo qué condición.
+
+No me consueles. Prefiero saberlo hoy que en la sustentación.</pre>
+
+<p class="paso">Prompt 3 · dejarlo en el sistema</p>
+<pre>Escríbeme 02_decision/metodologia.md con: el método que escojo,
+por qué ese, qué supuesto tiene que cumplirse para que valga,
+qué métodos descarté con su razón, y qué NO voy a poder afirmar.
+
+Una página. Lo que no sepas, [FALTA: qué].</pre>
+
+<div class="av"><b>La trampa de esta estación</b>
+Le va a recomendar el método más sofisticado que quepa, porque suena mejor. <strong>El método correcto es el más simple que responda su pregunta con los datos que va a poder conseguir.</strong> Si le propone control sintético y usted tiene 40 observaciones, dígaselo y que vuelva a empezar.</div>
 
 <div class="ok"><b>Sabe que quedó bien si…</b>
-Puede decir en voz alta: «tengo tantas filas, una por [cada qué], de tal año a tal año». Si no puede completar esa frase, todavía no sabe qué bajó.</div>
+Puede decir en una frase: «voy a hacer [método], que exige [dato], y que vale solo si se cumple [supuesto]». Las tres partes, o todavía no lo tiene.</div>
 
 <div class="queda"><b>Queda guardado</b>
-<code>04_datos/crudo/</code> — el archivo, sin tocar<br>
-<code>04_datos/FUENTES.md</code> — de dónde salió, qué años, y cuál es la variable que falta</div>
+<code>02_decision/metodologia.md</code> — el método, el supuesto, lo descartado y lo que no va a poder afirmar</div>
 </div></div>
 
 <!-- ═══ 4 ═══ -->
 <div class="est" id="e4">
-<div class="eh"><span class="n">4</span><h2>El primer número</h2><span class="cas">Casilla 04</span></div>
+<div class="eh"><span class="n">4</span><h2>Los datos · a la máxima granularidad</h2><span class="cas">04_datos</span></div>
 <div class="eb">
 <div class="meta">
-<div class="mi"><b>Dónde</b><span>Google Colab</span></div>
-<div class="mi"><b>Cuánto</b><span>30 minutos</span></div>
-<div class="mi"><b>Sale</b><span>figura_1.png</span></div>
+<div class="mi"><b>Herramienta</b><span>Navegador + su IA</span></div>
+<div class="mi"><b>Cuánto</b><span>40 minutos</span></div>
+<div class="mi"><b>Sale</b><span>un archivo real</span></div>
 </div>
 
-<p style="font-size:.94rem">Hoy no es la regresión. Hoy es <strong>ver el dato</strong>. La regresión sin haber mirado antes es la forma más rápida de creerse algo falso.</p>
+<p style="font-size:.94rem"><strong>La regla: no se sale de aquí sin un archivo bajado.</strong> Ni una lista de fuentes posibles, ni un plan. Un archivo, en su computador, en <code>04_datos/crudo/</code>.</p>
 
-<p class="paso">Paso 1 · suba el archivo a Colab</p>
-<p style="font-size:.94rem"><a href="https://colab.research.google.com">colab.research.google.com</a> → <em>Archivo · Nuevo cuaderno</em> → el ícono de carpeta a la izquierda → subir.</p>
+<p class="paso">Prompt 1 · contra el pensamiento agregado</p>
+<div class="av" style="margin-top:0"><b>El vicio que hay que romper</b>
+Casi todos piensan en promedios departamentales y series nacionales. <strong>Con datos agregados casi nunca se puede identificar nada</strong>: se pierde la variación que su método necesita. Este prompt existe para empujarlos hacia abajo.</div>
+<pre>Mi pregunta es: [PEGUE LA PREGUNTA]
+El método que escogí es: [PEGUE EL MÉTODO]
 
-<p class="paso">Paso 2 · el prompt</p>
-<div class="dice"><b>El prompt</b>
-<pre>Con el archivo que subí:
+Necesito datos a la MAYOR GRANULARIDAD POSIBLE. No me des
+agregados departamentales ni promedios nacionales. Búscame, en
+este orden:
 
-1. Cuántas filas, cuántas columnas, qué tipo es cada una y
-   cuántos faltantes tiene cada columna.
+1. MICRODATOS — la unidad más pequeña que exista: la persona, la
+   empresa, el establecimiento, el contrato, el estudiante, la
+   transacción. Dónde están y si son públicos o hay que pedirlos.
 
-2. Para la columna que me interesa [NÓMBRELA]: media, mediana,
-   mínimo, máximo y desviación estándar.
+2. REGISTROS ADMINISTRATIVOS — lo que alguna entidad ya recoge
+   para operar, no para investigar: RUES, SECOP, SISBÉN, PILA,
+   registros de cámaras de comercio, licencias, permisos,
+   matrículas, actas. Qué entidad lo tiene y por qué canal se pide.
 
-3. Los valores únicos de las columnas de texto, tal como están
-   escritos, con tildes y mayúsculas.
+3. DATOS QUE SE PUEDEN CONSTRUIR — lo que no existe como base
+   pero se puede armar: portales de transparencia, PDF de informes
+   institucionales, actas publicadas, avisos, páginas web. Qué se
+   podría extraer y con cuánto esfuerzo.
 
-4. Una figura: la distribución de mi variable principal, o su
-   evolución en el tiempo si tengo años. Guárdala como
-   figura_1.png.
+4. DATOS PROPIOS — si nada de lo anterior sirve, qué instrumento
+   tendría que levantar yo y de qué tamaño.
 
-No hagas ninguna regresión todavía. Y no inventes ninguna cifra
-que no salga del archivo.</pre></div>
+Para cada fuente: qué entidad, qué años, a qué nivel está, si es
+pública o hay que pedirla, y el enlace exacto.
 
-<p class="paso">Paso 3 · mírela y desconfíe</p>
-<div class="av"><b>Las tres preguntas que le hace a su propia figura</b>
+Y al final: ¿cuál es la variable que mi método EXIGE y que
+probablemente no voy a encontrar en ninguna parte?</pre>
+
+<p class="paso">Paso 2 · las cinco puertas, por si quiere ir directo</p>
+<div class="tool"><b>En orden de facilidad</b>
 <ul>
-<li><strong>¿El número de filas es el que esperaba?</strong> Si bajó datos de 1.122 municipios y le salen 340, hay un filtro que no vio.</li>
-<li><strong>¿El máximo tiene sentido?</strong> Un valor absurdo casi siempre es un error de digitación, no un caso extremo interesante.</li>
-<li><strong>¿Hay un salto raro en algún año?</strong> Puede ser un cambio de metodología, no un cambio del mundo. Averígüelo antes de explicarlo.</li>
-</ul></div>
+<li><strong><a href="https://www.datos.gov.co">datos.gov.co</a></strong> — catálogo nacional, CSV sin cuenta</li>
+<li><strong><a href="https://microdatos.dane.gov.co">microdatos.dane.gov.co</a></strong> — GEIH, ECV, ENUT, censos. Registro gratis</li>
+<li><strong><a href="https://www.icfes.gov.co/data-icfes/">ICFES · Data</a></strong> — Saber 11 y Saber Pro por estudiante</li>
+<li><strong><a href="https://totoro.banrep.gov.co/estadisticas-economicas/">Banco de la República</a></strong> — series macro en Excel</li>
+<li><strong><a href="https://terridata.dnp.gov.co">TerriData · DNP</a></strong> — indicadores por municipio</li>
+</ul>
+La lista completa de 23 fuentes está en el sitio del curso.</div>
+
+<p class="paso">Paso 3 · baje el archivo, ábralo, y vuelva a la estación 1</p>
+<div class="dice"><b>El ciclo · esto es lo que de verdad enseña la estación</b>
+Ahora que sabe qué datos existen de verdad, <strong>vuelva a <code>hipotesis.md</code></strong>. Casi siempre hay que ajustar algo: la población, los años, la variable. Escriba el ajuste y anote en <code>decisiones.md</code> qué cambió y por qué.<br><br>
+<strong>Una pregunta que no cambia al ver los datos es una pregunta que nadie ha ido a buscar.</strong></div>
+
+<div class="av"><b>La trampa</b>
+Un filtro que no encuentra nada <strong>no da error: da cero filas</strong>. Una tilde de menos, una mayúscula de más, y el resultado es un archivo vacío sin aviso.<br><br>
+<strong>Siempre antes de filtrar:</strong> pida la lista de valores únicos de esa columna, tal como están escritos, y cópielos.</div>
 
 <div class="queda"><b>Queda guardado</b>
-<code>05_salidas/figura_1.png</code><br>
-<code>04_datos/datos.md</code> — cuántas filas, qué años, y las tres respuestas de arriba</div>
+<code>04_datos/crudo/</code> el archivo sin tocar · <code>04_datos/FUENTES.md</code> de dónde salió y cuál es la variable que falta · <code>hipotesis.md</code> ajustada</div>
 </div></div>
 
 <!-- ═══ 5 ═══ -->
 <div class="est" id="e5">
-<div class="eh"><span class="n">5</span><h2>La introducción en cuatro párrafos</h2><span class="cas">Casilla 05</span></div>
+<div class="eh"><span class="n">5</span><h2>Las descriptivas que sugieren algo</h2><span class="cas">05_salidas</span></div>
 <div class="eb">
 <div class="meta">
-<div class="mi"><b>Dónde</b><span>A mano, primero</span></div>
-<div class="mi"><b>Cuánto</b><span>35 minutos</span></div>
+<div class="mi"><b>Herramienta</b><span>Google Colab</span></div>
+<div class="mi"><b>Cuánto</b><span>30 minutos</span></div>
+<div class="mi"><b>Sale</b><span>figura_1.png</span></div>
+</div>
+
+<p style="font-size:.94rem">Hoy no es el modelo. Hoy es <strong>ver el dato</strong> — y verlo con los ojos del método que escogió en la estación 3. Cada método pide reportar cosas distintas antes de estimar nada.</p>
+
+<p class="paso">Paso 1 · suba el archivo a Colab</p>
+<p style="font-size:.94rem"><a href="https://colab.research.google.com">colab.research.google.com</a> → <em>Archivo · Nuevo cuaderno</em> → el ícono de carpeta a la izquierda → subir. Si la sesión se desconecta, el archivo se borra: se vuelve a subir, son cuatro segundos.</p>
+
+<p class="paso">Prompt · descriptivas con el método en la cabeza</p>
+<pre>Con el archivo que subí, y sabiendo que mi método es [MÉTODO]:
+
+1. Lo básico: cuántas filas, cuántas columnas, qué tipo es cada
+   una, cuántos faltantes por columna, y los valores únicos de
+   las columnas de texto tal como están escritos.
+
+2. Los descriptivos que MI MÉTODO exige reportar antes de estimar
+   nada. Dime cuáles son y por qué ese método los pide.
+
+3. Una tabla de composición: cómo se ven los grupos que voy a
+   comparar, lado a lado, antes de cualquier modelo.
+
+4. UNA figura que SUGIERA la relación que espero — no que la
+   pruebe, que la sugiera. Guárdala como figura_1.png.
+   Si la figura no muestra nada, dímelo con todas las letras en
+   vez de buscar otra que sí.
+
+5. ¿Hay algo en estos descriptivos que ponga en duda el supuesto
+   de mi método? Esa es la pregunta que de verdad importa.
+
+No inventes ninguna cifra que no salga del archivo.</pre>
+
+<div class="ok"><b>El punto 4 es el que enseña</b>
+Si la figura cruda no sugiere nada, <strong>el modelo casi nunca lo salva</strong>. Un resultado que solo aparece después de tres controles y una transformación es un resultado del que hay que desconfiar.</div>
+
+<div class="av"><b>Las tres preguntas que le hace a su propia figura</b>
+<ul>
+<li><strong>¿El número de filas es el que esperaba?</strong> Si bajó 1.122 municipios y salen 340, hay un filtro que no vio.</li>
+<li><strong>¿El máximo tiene sentido?</strong> Un valor absurdo casi siempre es error de digitación, no un caso extremo interesante.</li>
+<li><strong>¿Hay un salto raro en algún año?</strong> Puede ser un cambio de metodología, no un cambio del mundo.</li>
+</ul></div>
+
+<div class="queda"><b>Queda guardado</b>
+<code>05_salidas/figura_1.png</code> · <code>04_datos/datos.md</code> con las respuestas de arriba</div>
+</div></div>
+
+<!-- ═══ 6 ═══ -->
+<div class="est" id="e6">
+<div class="eh"><span class="n">6</span><h2>La introducción en cuatro párrafos</h2><span class="cas">05_salidas</span></div>
+<div class="eb">
+<div class="meta">
+<div class="mi"><b>Herramienta</b><span>A mano, y después su IA</span></div>
+<div class="mi"><b>Cuánto</b><span>20 min aquí, se termina en casa</span></div>
 <div class="mi"><b>Sale</b><span>intro.md</span></div>
 </div>
 
-<p style="font-size:.94rem">Las introducciones de los papers de economía siguen una receta. No es un secreto: <strong>Keith Head</strong>, de la Universidad de British Columbia, la escribió y hoy la usa medio gremio. Son cinco piezas.</p>
+<p style="font-size:.94rem">Las introducciones de los papers de economía siguen una receta. <strong>Keith Head</strong>, de la Universidad de British Columbia, la escribió y hoy la usa medio gremio. Cinco piezas.</p>
 
 <div class="tw"><table>
-<thead><tr><th>Pieza</th><th>Qué hace</th><th>Cuánto</th></tr></thead>
+<thead><tr><th>Pieza</th><th>Qué hace</th><th>De dónde sale</th></tr></thead>
 <tbody>
-<tr><td><strong>Hook</strong></td><td>por qué esto le importa a alguien que no es usted</td><td>2–3 frases</td></tr>
-<tr><td><strong>Question</strong></td><td>qué pregunta exactamente. Va temprano, no al final</td><td>1 frase</td></tr>
-<tr><td><strong>Antecedents</strong></td><td>qué ya se sabía — sale de su tabla de evidencia</td><td>1 párrafo</td></tr>
-<tr><td><strong>Value added</strong></td><td>qué agrega usted. El hueco de la estación 2</td><td>1 párrafo</td></tr>
-<tr><td><strong>Roadmap</strong></td><td>qué viene en el documento</td><td>2 frases</td></tr>
+<tr><td><strong>Hook</strong></td><td>por qué esto le importa a alguien que no es usted</td><td>su terreno</td></tr>
+<tr><td><strong>Question</strong></td><td>qué pregunta exactamente. Va temprano</td><td><code>hipotesis.md</code></td></tr>
+<tr><td><strong>Antecedents</strong></td><td>qué ya se sabía</td><td><code>tabla_evidencia.md</code></td></tr>
+<tr><td><strong>Value added</strong></td><td>qué agrega usted</td><td>el hueco de la estación 2</td></tr>
+<tr><td><strong>Roadmap</strong></td><td>qué viene</td><td><code>metodologia.md</code></td></tr>
 </tbody></table></div>
+<p style="font-size:.92rem;color:var(--ink3)">Fíjense en la tercera columna: <strong>las cinco piezas ya están en su sistema.</strong> Escribir es juntarlas.</p>
 
 <p class="paso">Paso 1 · escríbala usted · 15 minutos, sin la máquina</p>
-<p style="font-size:.94rem">Cuatro párrafos, en <code>05_salidas/intro.md</code>. Fea. Con las palabras que usted usaría hablando. <strong>El punto no es que quede bien: es que sea suya.</strong></p>
+<p style="font-size:.94rem">Cuatro párrafos, en <code>05_salidas/intro.md</code>. Fea. Con las palabras que usaría hablando.</p>
 
-<p class="paso">Paso 2 · ahora sí, que la audite</p>
-<div class="dice"><b>El prompt · fíjese que no le pide que escriba</b>
+<p class="paso">Paso 2 · que la audite · fíjese que NO le pide que escriba</p>
 <pre>Te voy a dar mi introducción. NO la reescribas.
 
 Audítala contra esta estructura, pieza por pieza:
@@ -344,41 +468,38 @@ Audítala contra esta estructura, pieza por pieza:
 Para cada pieza dime: si está o no está, en qué párrafo, y qué
 le falta para servir.
 
-Después dime las dos frases más flojas del texto y por qué —
-pero no me las corrijas, que las arreglo yo.
+Después dime las dos frases más flojas y por qué — pero no me
+las corrijas, que las arreglo yo.
 
 Y al final: si un lector solo leyera el primer párrafo,
-¿entendería de qué se trata? Sí o no, y por qué.</pre></div>
+¿entendería de qué se trata? Sí o no, y por qué.</pre>
 
-<p class="paso">Paso 3 · la comparación</p>
 <div class="av"><b>La trampa · pídale que la escriba ella y compare</b>
-Ahora sí dígale: <em>«escribe tú la introducción sobre este mismo tema»</em>. Va a salir fluida, elegante y con transiciones perfectas.<br><br>
-<strong>Léalas lado a lado.</strong> La de ella se lee mejor. Y no dice un solo hecho que ella no pudiera haber sacado de cualquier parte: no tiene su terreno, no tiene su dato, no tiene su hueco. <strong>Se lee mejor y vale menos.</strong></div>
+Ahora sí dígale: <em>«escribe tú la introducción sobre este mismo tema»</em>. Va a salir fluida y con transiciones perfectas.<br><br>
+<strong>Léanlas lado a lado.</strong> La de ella se lee mejor. Y no dice un solo hecho que no pudiera salir de cualquier parte: no tiene su terreno, ni su dato, ni su hueco. <strong>Se lee mejor y vale menos.</strong></div>
 
 <div class="ok"><b>La regla que sale de aquí</b>
-La máquina no escribe su paper. <strong>Lee el suyo y le dice dónde está flojo</strong>, que es lo que un buen director de tesis hace y casi nadie tiene disponible a las once de la noche.</div>
+La máquina no escribe su paper. <strong>Lee el suyo y le dice dónde está flojo</strong> — que es lo que hace un buen director de tesis y casi nadie tiene disponible a las once de la noche.</div>
 
 <div class="queda"><b>Queda guardado</b>
-<code>05_salidas/intro.md</code> — la suya, corregida por usted<br>
-<code>02_decision/decisiones.md</code> — qué le dijo la auditoría y qué decidió cambiar</div>
+<code>05_salidas/intro.md</code> — la suya, corregida por usted</div>
 </div></div>
 
-<!-- ═══ 6 ═══ -->
-<div class="est" id="e6">
-<div class="eh"><span class="n">6</span><h2>El abstract y los límites</h2><span class="cas">Casilla 05</span></div>
+<!-- ═══ 7 ═══ -->
+<div class="est" id="e7">
+<div class="eh" style="background:var(--ambar)"><span class="n">7</span><h2>El abstract y los límites</h2><span class="cas">Se termina en casa</span></div>
 <div class="eb">
 <div class="meta">
-<div class="mi"><b>Dónde</b><span>Su carpeta</span></div>
-<div class="mi"><b>Cuánto</b><span>20 minutos</span></div>
+<div class="mi"><b>Herramienta</b><span>Su IA, con todo cargado</span></div>
+<div class="mi"><b>Cuánto</b><span>Se arranca aquí</span></div>
 <div class="mi"><b>Sale</b><span>resumen.md</span></div>
 </div>
 
-<p style="font-size:.94rem">Ciento cincuenta palabras. Es el ejercicio más corto de la mañana y el más difícil: <strong>si no le cabe, es porque todavía hay un hueco en el sistema.</strong> El abstract no se escribe al final por tradición — se escribe al final porque es lo único que obliga a que todas las piezas cuadren.</p>
+<p style="font-size:.94rem">Ciento cincuenta palabras. El ejercicio más corto y el más difícil: <strong>si no le cabe, es porque todavía hay un hueco en el sistema.</strong> El abstract se escribe al final porque es lo único que obliga a que todas las piezas cuadren.</p>
 
-<p class="paso">Paso 1 · las cinco frases</p>
-<div class="dice"><b>El prompt</b>
-<pre>Con mi pregunta, mi tabla de evidencia, mi figura y mi
-introducción, escríbeme un abstract de MÁXIMO 150 palabras,
+<p class="paso">El prompt</p>
+<pre>Con mi pregunta, mi tabla de evidencia, mi metodología, mi figura
+y mi introducción, escríbeme un abstract de MÁXIMO 150 palabras,
 con exactamente cinco frases:
 
 1. El problema y por qué importa
@@ -387,52 +508,51 @@ con exactamente cinco frases:
 4. El límite más importante, en la misma frase que el hallazgo
 5. Qué implica
 
-Reglas: ninguna cifra que no esté en mis archivos. Si algo me
-falta para completar una frase, escribe [FALTA: qué] en vez de
-rellenar. Cuenta las palabras y dime cuántas quedaron.</pre></div>
+Reglas: ninguna cifra que no esté en mis archivos. Si me falta
+algo para completar una frase, escribe [FALTA: qué] en vez de
+rellenar. Cuenta las palabras y dime cuántas quedaron.</pre>
 
-<p class="paso">Paso 2 · la magnitud honesta</p>
-<div class="av"><b>La trampa · la que le pasó al profesor el martes</b>
-Un coeficiente <strong>no tiene magnitud por sí solo</strong>. El mismo número puede decirse como 2,5 · 3,4 · 7,3 o 27,5 puntos porcentuales según qué cambio decida contar — y todas son «ciertas».<br><br>
+<div class="av"><b>La trampa · la magnitud honesta</b>
+Un coeficiente <strong>no tiene magnitud por sí solo</strong>. El mismo número puede decirse de cuatro formas distintas según qué cambio decida contar, y todas son «ciertas».<br><br>
 <strong>Escoja una y dígala con su referente:</strong> «un aumento de una desviación estándar en X se asocia con Y puntos más de Z». Nunca la cifra sola.</div>
 
-<p class="paso">Paso 3 · los tres límites</p>
-<p style="font-size:.94rem">Al final de <code>resumen.md</code>, tres viñetas: qué no puede concluir · a quién no aplica su muestra · cuál es la variable que le falta. <strong>Escritas por usted, no por la máquina.</strong></p>
+<p class="paso">Y los tres límites, escritos por usted</p>
+<p style="font-size:.94rem">Al final de <code>resumen.md</code>: qué no puede concluir · a quién no aplica su muestra · cuál es la variable que le falta.</p>
 
 <div class="ok"><b>Sabe que la mañana funcionó si…</b>
 Puede leer su abstract en voz alta en treinta segundos y nadie tiene que preguntarle de qué se trata.</div>
 
-<div class="queda"><b>Queda guardado</b>
-<code>05_salidas/resumen.md</code> — el abstract de 150 palabras y los tres límites</div>
+<div class="queda"><b>Queda guardado · y es lo que se trae el lunes</b>
+<code>05_salidas/resumen.md</code></div>
 </div></div>
 
-<!-- ═══ sábado ═══ -->
-<p class="bt" id="sabado">Y el lunes · lo que cambia</p>
+<!-- ═══ lunes ═══ -->
+<p class="bt" id="lunes">Y el lunes · lo mismo, pero conectado</p>
 <div class="est">
-<div class="eh" style="background:var(--tinta)"><span class="n">→</span><h2>Lo mismo, pero conectado</h2><span class="cas">Sesión 6</span></div>
+<div class="eh" style="background:var(--tinta)"><span class="n">→</span><h2>La última sesión</h2><span class="cas">Sesión 6</span></div>
 <div class="eb">
-<p style="font-size:.94rem">Todo lo que hicieron hoy a mano —buscar, bajar, copiar, pegar— el lunes lo hace el sistema solo. No porque sea mágico: porque le vamos a dar <strong>llaves</strong>.</p>
+<p style="font-size:.94rem">Todo lo que hicieron hoy a mano —buscar, bajar, copiar, pegar, cambiar de pestaña— el lunes lo hace el sistema. No porque sea mágico: porque le vamos a dar <strong>llaves</strong>.</p>
 <div class="tw"><table>
 <thead><tr><th>Hoy, a mano</th><th>El lunes, conectado</th></tr></thead>
 <tbody>
 <tr><td>Bajar tres PDF y arrastrarlos</td><td>El asistente lee su carpeta de literatura solo</td></tr>
 <tr><td>Buscar el dato y bajar el CSV</td><td>La fuente se consulta por su API</td></tr>
 <tr><td>Copiar la cifra de un lado a otro</td><td>La cifra sale del archivo, siempre</td></tr>
-<tr><td>Abrir seis pestañas</td><td>Una sola conversación que ve todo</td></tr>
+<tr><td>Siete pestañas y siete herramientas</td><td>Una conversación que ve las seis casillas</td></tr>
 </tbody></table></div>
 <div class="dice"><b>Qué traer el lunes</b>
 <ul>
 <li>Las <strong>seis casillas con algo adentro</strong> — no completas, pero no vacías</li>
-<li>El <strong>abstract</strong> de hoy</li>
+<li>El <strong>abstract</strong> de la estación 7</li>
 <li>Una <strong>cuenta de Google</strong> con la que puedan entrar a Google Cloud Console</li>
 <li>El computador con el que trabajaron hoy, con la carpeta donde quedó</li>
 </ul></div>
-<p style="font-size:.94rem"><strong>Y al final del lunes sale el brief:</strong> pregunta, evidencia, datos, resultado, límites y qué sigue, en un documento armado desde las seis casillas. Por eso la mañana de hoy importa — <em>el lunes no se construye nada nuevo, se ensambla lo que ya está.</em></p>
+<p style="font-size:.94rem"><strong>Y al final del lunes sale el brief:</strong> pregunta, evidencia, método, datos, resultado, límites y qué sigue — armado desde las seis casillas. Por eso la mañana de hoy importa: <em>el lunes no se construye nada nuevo, se ensambla lo que ya está.</em></p>
 </div></div>
 
 <div class="dice" style="margin-top:1.6rem">
 <b>Lo que se llevan de hoy</b>
-Un sistema que ya no está vacío. Y la experiencia de haberlo llenado a pulso — que es lo único que hace que el lunes, cuando se conecte, entiendan exactamente qué se ahorraron y por qué vale la pena montarlo.
+Un sistema que ya no está vacío, y el recorrido completo del proceso de investigación hecho con las manos. Eso es lo que hace que el lunes, cuando se conecte, entiendan exactamente qué se ahorraron y por qué vale la pena montarlo.
 </div>
 
 </div>
